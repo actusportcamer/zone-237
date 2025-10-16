@@ -332,7 +332,7 @@ export default function EventDetail({ eventId, onBack, UpdateEvent }: EventDetai
                     <div className="flex items-center justify-between mb-1">
                       <p className="font-semibold text-gray-900">@{comment.profiles.username}</p>
                       <div className="flex items-center gap-2">
-                        <span className="text-sm text-gray-500">
+                        <span className="text-xs text-gray-500">
                           {moment(comment.created_at).fromNow()}
                         </span>
                         {profile && (profile.id === comment.user_id || profile.is_admin) && (
